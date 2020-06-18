@@ -1,0 +1,4 @@
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{ "name": "", "phone": "", "email": "", "address": "" }' \
+  localhost:5000/createGeneral

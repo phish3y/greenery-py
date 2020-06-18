@@ -1,0 +1,4 @@
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data '{ "name": "gabriel-farm-and-greenhouse.json" }' \
+  localhost:5000/readGeneral
