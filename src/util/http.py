@@ -4,7 +4,7 @@ from pyramid.request import Request
 import traceback
 
 
-def build_success_response(body: str) -> Response:
+def build_success_response(body: str = '') -> Response:
     try:
         return Response(status=200,
                         content_type='application/json',
@@ -30,3 +30,11 @@ def get_json_body_from_request(request: Request) -> dict:
     except:
         traceback.print_exc()
         return {}
+
+
+def get_greenery_id_from_json_body(json_body: dict) -> str:
+    try:
+        return json_body['greenery_id']
+    except:
+        traceback.print_exc()
+        return ''

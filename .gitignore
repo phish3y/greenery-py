@@ -1,2 +1,4 @@
 .idea
 venv
+ops/*pem
+__pycache__
